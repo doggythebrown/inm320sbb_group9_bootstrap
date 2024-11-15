@@ -1,0 +1,19 @@
+{
+  "name": "bootstrap",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "goservergo": "lite-server --baseDir=\"public\"",
+    "start": "concurrently \"npm run goservergo\" \"npm run sass\"",
+    "sass": "sass --watch src/scss:public/assets/css"
+  },
+  "keywords": [],
+  "author": "youngeun_kwon,sasimurthy_thiyagarajan",
+  "license": "private",
+  "private": true,
+  "devDependencies": {
+    "concurrently": "^9.0.1",
+    "lite-server": "^2.6.1",
+    "sass": "^1.79.4"
+  }
+}

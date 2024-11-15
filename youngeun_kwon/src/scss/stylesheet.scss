@@ -1,0 +1,128 @@
+$font-family-base: 'Mulish', sans-serif !important;
+$bg-color-dark: #363740;
+$bg-color-light: #f7f8fc;
+$text-color-dark: #252733;
+$text-color-gray: #9fa2b4;
+
+// mobile-first design
+body {
+    font-family: $font-family-base;
+    background-color: $bg-color-light;
+    color: $text-color-dark;
+}
+
+// main content styles
+.main-content {
+    background-color: $bg-color-light;
+    padding: 2rem;
+}
+
+// sidebar styles
+.sidebar {
+    background-color: $bg-color-dark;
+
+    .sidebar-header {
+        font-size: 18px;
+        color: #a4a6b3;
+        font-weight: 700;
+    }
+
+    .nav-link {
+        color: #a4a6b3;
+        &:hover {
+            color: #dde2ff;
+        }
+    }
+}
+
+// card styles
+.card {
+    border: none;
+    border-radius: 8px;
+    margin: 1rem;
+
+    h5 {
+        font-weight: 600;
+        color: $text-color-dark;
+    }
+
+    h2 {
+        font-weight: 700;
+    }
+
+    &-hover {
+        transition: background-color 0.3s, color 0.3s;
+
+        &:hover {
+            color: #3751ff;
+            border: 1px solid #3751ff !important;
+
+            h5, h2 {
+                color: #3751ff;
+            }
+        }
+    }
+}
+
+// card divider style
+.card p {
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #ddd;
+
+    &:last-of-type {
+        border-bottom: none;
+    }
+}
+
+// right card styles
+.right_card {
+    p {
+        font-size: 24px;
+        font-weight: 700;
+        color: $text-color-dark;
+    }
+
+    h6 {
+        font-size: 16px;
+        font-weight: 600;
+        color: $text-color-gray;
+    }
+}
+
+// vertical divider style
+.vertical-divider {
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    height: 24px;
+    margin: 0 0.5rem;
+}
+
+// horizontal divider style
+.divider {
+    display: block;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0.5rem 1rem;
+}
+
+// equal height style
+.equal-height {
+    min-height: 300px;
+}
+
+// desktop styling
+@media (min-width: 768px) {
+    .main-content {
+        margin-left: 200px;
+    }
+
+    .sidebar {
+        position: fixed;
+        height: 100vh;
+        width: 200px;
+    }
+
+    .navbar-toggler {
+        display: none;
+    }
+}
