@@ -67,11 +67,6 @@ body {
   color: #9fa2b4;
 }
 
-.card h6 {
-  font-weight: bold;
-  font-size: 1.5rem;
-}
-
 .legend-today,
 .legend-yesterday {
   font-weight: bold;
