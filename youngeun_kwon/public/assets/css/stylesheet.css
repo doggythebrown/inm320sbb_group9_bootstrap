@@ -67,6 +67,54 @@ body {
   color: #9fa2b4;
 }
 
+.card h6 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.legend-today,
+.legend-yesterday {
+  font-weight: bold;
+  font-size: 1rem;
+  position: relative;
+  padding-left: 30px;
+}
+
+.legend-today {
+  color: #007bff;
+}
+
+.legend-yesterday {
+  color: #7d6c7b;
+}
+
+.legend-today::before,
+.legend-yesterday::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 20px;
+  height: 3px;
+  background-color: currentColor;
+  border-radius: 3px;
+  transform: translateY(-50%);
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.text-muted {
+  margin-right: 1rem;
+}
+
 .vertical-divider {
   border-left: 1px solid rgba(0, 0, 0, 0.2);
   height: 24px;
