@@ -76,7 +76,7 @@ body {
 }
 
 // right card styles
-.right_card {
+.right_card { 
     p {
         font-size: 24px;
         font-weight: 700;
@@ -88,6 +88,11 @@ body {
         font-weight: 600;
         color: $text-color-gray;
     }
+}
+
+//sub_title styling
+.bold h6{
+    font-weight: bold;
 }
   
 // Chart legend

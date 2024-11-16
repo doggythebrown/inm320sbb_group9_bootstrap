@@ -67,6 +67,10 @@ body {
   color: #9fa2b4;
 }
 
+.bold h6 {
+  font-weight: bold;
+}
+
 .legend-today,
 .legend-yesterday {
   font-weight: bold;
