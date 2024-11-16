@@ -90,6 +90,24 @@ body {
     }
 }
 
+.top-card {
+    p {
+        font-size: 2rem;
+        font-weight: 700;
+        color: $text-color-dark;
+    }
+
+    h5{
+        color: $text-color-gray;
+        font-size: 17px;
+    }
+}
+// icon styling
+.icon-large {
+    font-size: 1.2rem;
+    margin: 0 1rem;
+}
+
 //sub_title styling
 .bold h6{
     font-weight: bold;
@@ -98,8 +116,7 @@ body {
 // Chart legend
 .legend-today,
 .legend-yesterday {
-  font-weight: bold;
-  font-size: 1rem; 
+  font-size: 12px; 
   position: relative; 
   padding-left: 30px; 
 }
@@ -142,7 +159,7 @@ body {
 
 // vertical divider style
 .vertical-divider {
-    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    border-left: 2px solid gray;
     height: 24px;
     margin: 0 0.5rem;
 }
@@ -150,8 +167,8 @@ body {
 // horizontal divider style
 .divider {
     display: block;
-    height: 1px;
-    background-color: rgba(255, 255, 255, 0.2);
+    border-bottom: 2px solid gray;
+    height: 2px;
     margin: 0.5rem 1rem;
 }
 

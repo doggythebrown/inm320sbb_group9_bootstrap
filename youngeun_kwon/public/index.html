@@ -25,7 +25,9 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="#">Dashboard Kit</a>
+            <header>
+                <h1>Dashboard Kit</h1>
+            </header>
         </div>
     </nav>
 
@@ -42,7 +44,7 @@
                         <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-people me-2"></i>Contacts</a></li>
                         <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-person-lines-fill me-2"></i>Agents</a></li>
                         <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-file-earmark-text me-2"></i>Articles</a></li>
-                        <span class="divider"></span>
+                        <hr class="divider" aria-hidden="true">
                         <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-gear me-2"></i>Settings</a></li>
                         <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-credit-card me-2"></i>Subscription</a></li>
                     </ul>
@@ -52,15 +54,15 @@
             <!-- main content -->
             <main class="col-md-10 ms-sm-auto col-lg-10 px-md-4 main-content">
                 <header class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                    <h1 class="h4">Overview</h1>
+                    <h3 class="h4">Overview</h3>
                     <!-- icons, user info -->
                     <div class="d-flex align-items-center">
                         <!-- search icon -->
-                        <i class="bi bi-search mx-3" style="font-size: 1.2rem;"></i>
+                        <i class="bi bi-search mx-3 icon-large"></i>
                         <!-- notification icon -->
-                        <i class="bi bi-bell mx-3" style="font-size: 1.2rem;"></i>
+                        <i class="bi bi-bell mx-3 icon-large"></i>
                         <!-- divider -->
-                        <span class="vertical-divider"></span>
+                        <hr class="vertical-divider" aria-hidden="true">
                         <!-- user name -->
                         <span class="mx-2">Youngeun Kwon</span>
                         <!-- user photo -->
@@ -81,12 +83,12 @@
                                     <!-- Name Field -->
                                     <div class="mb-3">
                                         <label for="name" class="form-label">Full Name</label>
-                                        <input type="text" class="form-control" id="name" placeholder="Enter your name" value="Youngeun Kwon" required>
+                                        <input type="text" class="form-control" id="name" placeholder="Enter your name" value="Youngeun Kwon" required aria-required="true">
                                     </div>
                                     <!-- Email Field -->
                                     <div class="mb-3">
                                         <label for="email" class="form-label">Email Address</label>
-                                        <input type="email" class="form-control" id="email" placeholder="Enter your email" value="youngeun@example.com" required>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter your email" value="youngeun@example.com" required aria-required="true">
                                     </div>
                                     <!-- Profile Picture Field -->
                                     <div class="mb-3">
@@ -97,7 +99,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save Changes</button>
+                                <button type="submit" class="btn btn-primary">Save Changes</button>
                             </div>
                         </div>
                     </div>
@@ -106,27 +108,27 @@
                 <!-- cards section -->
                 <section class="row mb-4">
                     <div class="col-sm-3 mb-3">
-                        <div class="card text-center p-3 border card-hover">
+                        <div class="card text-center p-3 border card-hover top-card">
                             <h5>Unresolved</h5>
-                            <h2>60</h2>
+                            <p>60</p>
                         </div>
                     </div>
                     <div class="col-sm-3 mb-3">
-                        <div class="card text-center p-3 border card-hover">
+                        <div class="card text-center p-3 border card-hover top-card">
                             <h5>Overdue</h5>
-                            <h2>16</h2>
+                            <p>16</p>
                         </div>
                     </div>
                     <div class="col-sm-3 mb-3">
-                        <div class="card text-center p-3 border card-hover">
+                        <div class="card text-center p-3 border card-hover top-card">
                             <h5>Open</h5>
-                            <h2>43</h2>
+                            <p>43</p>
                         </div>
                     </div>
                     <div class="col-sm-3 mb-3">
-                        <div class="card text-center p-3 border card-hover">
+                        <div class="card text-center p-3 border card-hover top-card">
                             <h5>On hold</h5>
-                            <h2>64</h2>
+                            <p>64</p>
                         </div>
                     </div>
                 </section>
@@ -137,8 +139,8 @@
                         <div class="card p-3 h-100 bold">
                             <h6>Today's trends</h6>
                             <div class="d-flex justify-content-between align-items-center mt-2">
-                                <!-- Subtext (as of 25 May 2019, 09:41 pm) -->
-                                <p class="text-muted mb-0">as of 25 May 2019, 09:41 PM</p>
+                                <!-- date and time -->
+                                <p class="text-muted mb-0"> as of <time datetime="2019-05-25T21:41">25 May 2019, 09:41 PM</time> </p>
 
                                 <!-- legend (today and yesterday) -->
                                 <div class="d-flex align-items-center">
@@ -147,7 +149,7 @@
                                 </div>
                             </div>
                             <!-- chart -->
-                            <img src="assets/images/full_graph.png" alt="today's trends graph" />
+                            <img src="assets/images/full_graph.png" alt="graph showing today's performance trends" />
                             <!-- button to open modal for detailed data -->
                             <div class="mt-3 text-end">
                                 <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#chartDataModal">View Chart Data</button>
@@ -254,7 +256,6 @@
         </div>
     </div>
 
-   
     <!-- Progress Bar Modal -->
     <div class="modal fade" id="progressModal" tabindex="-1" aria-labelledby="progressModalLabel" aria-hidden="true">
         <div class="modal-dialog">
