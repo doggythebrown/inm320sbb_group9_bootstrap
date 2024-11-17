@@ -3,80 +3,73 @@ $bg-color-dark: #363740;
 $bg-color-light: #f7f8fc;
 $text-color-dark: #252733;
 $text-color-gray: #9fa2b4;
+$border-color-gray: #dfe0eb;
+$action-color-blue: #3751ff;
+$nav-text-color-gary: #a4a6b3;
 
-// mobile-first design
+//mobile-first design
+//body styles
 body {
     font-family: $font-family-base;
     background-color: $bg-color-light;
     color: $text-color-dark;
 }
 
-// main content styles
+//main content styles
 .main-content {
     background-color: $bg-color-light;
-    padding: 2rem;
+    padding: 1rem;
 }
 
-// sidebar styles
+//sidebar styles
 .sidebar {
     background-color: $bg-color-dark;
 
     .sidebar-header {
         font-size: 18px;
-        color: #a4a6b3;
+        color: $nav-text-color-gary;
         font-weight: 700;
     }
 
     .nav-link {
-        color: #a4a6b3;
+        color: $nav-text-color-gary;
         &:hover {
             color: #dde2ff;
         }
     }
 }
 
-// card styles
+//card styles
 .card {
-    border: none;
-    border-radius: 8px;
-    margin: 1rem;
+    margin: 0 0.5rem;
 
     h5 {
         font-weight: 600;
         color: $text-color-dark;
     }
 
-    h2 {
-        font-weight: 700;
-    }
-
     &-hover {
         transition: background-color 0.3s, color 0.3s;
 
         &:hover {
-            color: #3751ff;
-            border: 1px solid #3751ff !important;
+            color: $action-color-blue;
+            border: 1px solid $action-color-blue !important;
 
             h5, h2 {
-                color: #3751ff;
+                color: $action-color-blue;
             }
         }
     }
 }
 
-// card divider style
-.card p {
-    padding-bottom: 0.5rem;
-    margin-bottom: 0.5rem;
-    border-bottom: 1px solid #ddd;
+//right card styles
+.right_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
 
-    &:last-of-type {
-        border-bottom: none;
-    }
-}
-
-// right card styles
-.right_card { 
     p {
         font-size: 24px;
         font-weight: 700;
@@ -90,6 +83,7 @@ body {
     }
 }
 
+//top card styles
 .top-card {
     p {
         font-size: 2rem;
@@ -102,18 +96,19 @@ body {
         font-size: 17px;
     }
 }
-// icon styling
+
+//icon styles
 .icon-large {
     font-size: 1.2rem;
     margin: 0 1rem;
 }
 
-//sub_title styling
+//sub_title styles
 .bold h6{
     font-weight: bold;
 }
   
-// Chart legend
+//chart legend
 .legend-today,
 .legend-yesterday {
   font-size: 12px; 
@@ -122,11 +117,11 @@ body {
 }
 
 .legend-today {
-  color: #007bff;
+  color: $action-color-blue;
 }
 
 .legend-yesterday {
-  color: #7d6c7b;
+  color: $text-color-gray;
 }
 
 .legend-today::before,
@@ -142,24 +137,18 @@ body {
   transform: translateY(-50%); 
 }
 
-.d-flex {
-  display: flex;
-  justify-content: space-between; 
-  align-items: center; 
+//gray color text styling
+.unresolved span {
+    color: $text-color-gray;
 }
-
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
-.text-muted {
-  margin-right: 1rem; 
+.gray {
+    color: $text-color-gray;
 }
 
 
 // vertical divider style
 .vertical-divider {
-    border-left: 2px solid gray;
+    border-left: 1px solid $border-color-gray;
     height: 24px;
     margin: 0 0.5rem;
 }
@@ -167,9 +156,9 @@ body {
 // horizontal divider style
 .divider {
     display: block;
-    border-bottom: 2px solid gray;
-    height: 2px;
-    margin: 0.5rem 1rem;
+    border-bottom: 1px solid $border-color-gray;
+    margin: 8px 0;
+    width: 100%;   
 }
 
 // equal height style

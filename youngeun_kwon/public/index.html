@@ -140,7 +140,7 @@
                             <h6>Today's trends</h6>
                             <div class="d-flex justify-content-between align-items-center mt-2">
                                 <!-- date and time -->
-                                <p class="text-muted mb-0"> as of <time datetime="2019-05-25T21:41">25 May 2019, 09:41 PM</time> </p>
+                                <p class="mb-0 gray"> as of <time datetime="2019-05-25T21:41">25 May 2019, 09:41 PM</time> </p>
 
                                 <!-- legend (today and yesterday) -->
                                 <div class="d-flex align-items-center">
@@ -180,12 +180,31 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card p-3 text-center justify-content-between h-100 right_card">
-                            <h6>Resolved</h6><p>449</p>
-                            <h6>Received</h6><p>426</p>
-                            <h6>Average first response time</h6><p>33m</p>
-                            <h6>Average response time</h6><p>3h 8m</p>
-                            <h6>Resolution within SLA</h6><p>94%</p>
+                        <div class="card p-3 h-100 right_card">
+                            <div>
+                                <h6>Resolved</h6>
+                                <p>449</p>
+                            </div>
+                            <div class="divider"></div>
+                            <div>
+                                <h6>Received</h6>
+                                <p>426</p>
+                            </div>
+                            <div class="divider"></div>
+                            <div>
+                                <h6>Average first response time</h6>
+                                <p>33m</p>
+                            </div>
+                            <div class="divider"></div>
+                            <div>
+                                <h6>Average response time</h6>
+                                <p>3h 8m</p>
+                            </div>
+                            <div class="divider"></div>
+                            <div>
+                                <h6>Resolution within SLA</h6>
+                                <p>94%</p>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -193,12 +212,12 @@
                 <!-- unresolved tickets and tasks section -->
                 <section class="row mt-4">
                     <div class="col-md-6">
-                        <div class="card p-3 equal-height">
+                        <div class="card p-3 equal-height unresolved">
                             <div class="d-flex justify-content-between align-items-center bold">
                                 <h6>Unresolved tickets</h6>
                                 <a href="#" class="text-primary">View details</a>
                             </div>
-                            <p class="text-muted">Group: Support</p>
+                            <p class="text-muted"><span>Group:</span> Support</p>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item d-flex justify-content-between align-items-center">
                                     Waiting on Feature Request <span>4238</span>
@@ -221,9 +240,9 @@
                                 <h6>Tasks</h6>
                                 <a href="#" class="text-primary">View all</a>
                             </div>
-                            <p class="text-muted">Today</p>
+                            <p class="gray">Today</p>
                             <div class="d-flex justify-content-between align-items-center mb-2">
-                                <span>Create new task</span>
+                                <span class="gray">Create new task</span>
                                 <button type="button" class="btn btn-sm btn-outline-primary rounded-circle">+</button>
                             </div>
                             <ul class="list-group list-group-flush">
